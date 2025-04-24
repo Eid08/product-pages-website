@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber - E-Commerce Product Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">Cyber</div>
+            <input type="text" class="search-bar" placeholder="Search">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="user-icons">
+                <span class="icon">❤️</span> <!-- Wishlist -->
+                <span class="icon">🛒</span> <!-- Cart -->
+                <span class="icon">👤</span> <!-- Profile -->
+            </div>
+        </div>
+        <nav class="category-menu">
+            <ul>
+                <li><a href="#">Phones</a></li>
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">Smart Watches</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Gaming</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="#">Home</a> &gt; <a href="#">Catalog</a> &gt; <span>Smartphones</span>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Sidebar (Filters) -->
+            <aside class="sidebar">
+                <!-- Price Filter -->
+                <details class="filter-section" open>
+                    <summary>Price</summary>
+                    <div class="filter-content">
+                        <label>From: <input type="number" value="1299"></label>
+                        <label>To: <input type="number" value="1299"></label>
+                        <input type="range" min="0" max="2000" value="1299">
+                    </div>
+                </details>
+
+                <!-- Brand Filter -->
+                <details class="filter-section">
+                    <summary>Brand</summary>
+                    <div class="filter-content">
+                        <label><input type="checkbox" checked> Apple (110)</label>
+                        <label><input type="checkbox"> Samsung (25)</label>
+                        <label><input type="checkbox"> Xiaomi (58)</label>
+                        <label><input type="checkbox"> Tecno (44)</label>
+                        <label><input type="checkbox"> Infinix (36)</label>
+                        <label><input type="checkbox"> OPPO (10)</label>
+                        <label><input type="checkbox"> Realme (34)</label>
+                        <label><input type="checkbox"> Nokia (32)</label>
+                        <label><input type="checkbox"> Itel (35)</label>
+                    </div>
+                </details>
+
+                <!-- Built-in Memory Filter -->
+                <details class="filter-section">
+                    <summary>Built-in Memory</summary>
+                    <div class="filter-content">
+                        <label><input type="checkbox"> 16GB (5)</label>
+                        <label><input type="checkbox"> 32GB (13)</label>
+                        <label><input type="checkbox"> 64GB (18)</label>
+                        <label><input type="checkbox"> 128GB (50)</label>
+                        <label><input type="checkbox"> 256GB (24)</label>
+                        <label><input type="checkbox"> 512GB (8)</label>
+                    </div>
+                </details>
+
+                <!-- Other Filters (Placeholder) -->
+                <details class="filter-section">
+                    <summary>Protection Class</summary>
+                    <div class="filter-content">
+                        <label><input type="checkbox"> Placeholder</label>
+                    </div>
+                </details>
+                <details class="filter-section">
+                    <summary>Screen Diagonal</summary>
+                    <div class="filter-content">
+                        <label><input type="checkbox"> Placeholder</label>
+                    </div>
+                </details>
+                <details class="filter-section">
+                    <summary>Screen Type</summary>
+                    <div class="filter-content">
+                        <label><input type="checkbox"> Placeholder</label>
+                    </div>
+                </details>
+                <details class="filter-section">
+                    <summary>Battery Capacity</summary>
+                    <div class="filter-content">
+                        <label><input type="checkbox"> Placeholder</label>
+                    </div>
+                </details>
+            </aside>
+
+            <!-- Product Grid -->
+            <section class="product-grid-section">
+                <div class="product-header">
+                    <span>Selected Products: 85</span>
+                    <select class="sort-by">
+                        <option>By rating</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+                <div class="product-grid">
+                    <!-- Product Card -->
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple1.png" alt="Apple iPhone 14 Pro 512GB Gold">
+                        <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
+                        <p class="price">$1437</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <!-- Repeat Product Cards (Sample) -->
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple2.png" alt="Apple iPhone 11 128GB White">
+                        <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                        <p class="price">$510</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple2.png" alt="Apple iPhone 11 128GB White">
+                        <h3>Apple iPhone 11 128GB White (MQ233)</h3>
+                        <p class="price">$550</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple3.png" alt="Apple iPhone 14 Pro 1TB Gold">
+                        <h3>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h3>
+                        <p class="price">$1499</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple1.png" alt="Apple iPhone 14 1TB Gold">
+                        <h3>Apple iPhone 14 1TB Gold (MQ2V3)</h3>
+                        <p class="price">$1399</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple4.png" alt="Apple iPhone 14 Pro 128GB Purple">
+                        <h3>Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)</h3>
+                        <p class="price">$1600</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple5.png" alt="Apple iPhone 13 Mini 128GB Pink">
+                        <h3>Apple iPhone 13 Mini 128GB Pink (MLK23)</h3>
+                        <p class="price">$850</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple1.png" alt="Apple iPhone 14 256GB Black">
+                        <h3>Apple iPhone 14 256GB Space Black (MQ0T3)</h3>
+                        <p class="price">$1399</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                    <article class="product-card">
+                        <span class="wishlist-icon">❤️</span>
+                        <img src="apple2.png" alt="Apple iPhone 14 Pro 256GB Silver">
+                        <h3>Apple iPhone 14 Pro 256GB Silver (MQ1T3)</h3>
+                        <p class="price">$1399</p>
+                        <button class="buy-now">Buy Now</button>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button>&lt;</button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <span>...</span>
+                    <button>12</button>
+                    <button>&gt;</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="logo">Cyber</div>
+                <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than...</p>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Bonus program</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Credit and payment</a></li>
+                    <li><a href="#">Service contract</a></li>
+                    <li><a href="#">Non-cash account</a></li>
+                    <li><a href="#">Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Assistance to the Buyer</h4>
+                <ul>
+                    <li><a href="#">Find an order</a></li>
+                    <li><a href="#">Terms of delivery</a></li>
+                    <li><a href="#">Exchange and return of goods</a></li>
+                    <li><a href="#">Guarantee</a></li>
+                    <li><a href="#">Frequently asked questions</a></li>
+                    <li><a href="#">Terms of use of the site</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <span>🐦</span> <!-- Twitter -->
+            <span>📘</span> <!-- Facebook -->
+            <span>📷</span> <!-- Instagram -->
+            <span>🎵</span> <!-- TikTok -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
